@@ -3,13 +3,11 @@
 
 {% block content %}
 
-<div class="row">
-  <div class="col-sm-12">
     <h4>view codes</h4>
     {% if snippet_list %}
       <ul class="list-group">
       {% for snippet in snippet_list %}
-        <li class="list-group-item">title: {{ snippet.title|capfirst }} | lang: {{snippet.language|capfirst}}
+        <li class="list-group-item">{{snippet.language}}/{{ snippet.title }}
           <div class="btn-group float-right">
             <a class="" href="/detail/{{snippet.id}}"><span type="submit" class="btn-sm btn-primary">View</span></a>
           </div>
@@ -19,7 +17,4 @@
     {% else %}
       <p>no posts yet.</p>
     {% endif%}
-  </div>
-</div>
-
 {% endblock %}

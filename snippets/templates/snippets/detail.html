@@ -1,22 +1,12 @@
 {% extends './base.html' %}
 
 {% block content %}
-<div class="table-responsive">
-  <h4 class="display-4">{{snippet.title}}</h4>
-  <table class="table table-hover">      
+<div>
+  <h4 class="display-4">{{snippet.language}}/{{snippet.title}}</h4>
+  <table class="table table-responsive">      
   <thead>
     <tr>
-      <th>Language</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>{{snippet.language}}</td>
-    </tr>
-  </tbody>    
-  <thead>
-    <tr>
-      <th>Description</th>
+      <th>description</th>
     </tr>
   </thead>
   <tbody>
