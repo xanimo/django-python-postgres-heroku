@@ -1,5 +1,5 @@
-# iSnippets
-iSnippets, built with Django and Python.
+# xanimo.herokuapp.com
+xanimo.herokuapp.com, built with Django and Python.
 
 ## Understand
 This is a simple application in Python that allows users to store snippets for future reference.

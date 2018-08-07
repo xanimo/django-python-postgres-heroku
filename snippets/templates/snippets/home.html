@@ -1,5 +1,5 @@
 {% extends './base.html' %}
-{% block title %} iSnippets {% endblock %}
+{% block title %} xanimo.herokuapp.com {% endblock %}
 
 {% block content %}
 
@@ -9,7 +9,7 @@
     {% if snippet_list %}
       <ul class="list-group">
       {% for snippet in snippet_list %}
-        <li class="list-group-item">{{snippet.language|capfirst}}: {{ snippet.title|capfirst }}
+        <li class="list-group-item">title: {{ snippet.title|capfirst }} | lang: {{snippet.language|capfirst}}
           <div class="btn-group float-right">
             <a class="" href="/detail/{{snippet.id}}"><span type="submit" class="btn-sm btn-primary">View</span></a>
           </div>
@@ -17,7 +17,7 @@
       {% endfor %}
     </ul>
     {% else %}
-      <p>No snippets yet.</p>
+      <p>no posts yet.</p>
     {% endif%}
   </div>
 </div>
