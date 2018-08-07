@@ -8,9 +8,7 @@
       <ul class="list-group">
       {% for snippet in snippet_list %}
         <li class="list-group-item">{{snippet.language}}/{{ snippet.title }}
-          <div class="btn-group float-right">
-            <a class="" href="/detail/{{snippet.id}}"><span type="submit" class="btn-sm btn-primary">View</span></a>
-          </div>
+            <a class="btn-sm btn-primary float-right" href="/detail/{{snippet.id}}">view</a>
         </li>
       {% endfor %}
     </ul>
